@@ -1,18 +1,18 @@
 # Full Workshop Title
-
+Integrating Custom Vision with Power Apps for Diabetic Retinopathy Detection
 ## Module Source Link
-
-Link the source Learn module here
+https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/
+https://docs.microsoft.com/en-us/learn/modules/get-started-with-powerapps/
 
 ## Goals
 
-In this workshop, we will discuss *insert your topic*.
+In this workshop, we will discuss how to build a no-code app with Custom Vision to classify imagines 
 
-| **Goal**              | *describe the goal of the workshop*                                    |
+| **Goal**              |                                |
 | ----------------------------- | --------------------------------------------------------------------- |
-| **What will you learn**       | *describe your learning goals*                                        |
-| **What you'll need**          | *link all the necessary tooling, subscriptions, and downloads needed* |
-| **Duration**                  | *specify the duration*                                                                |
+| **What will you learn**       | How to build an app with Power Apps and integrate Custom Vision to classify imagines                                        |
+| **What you'll need**          | [Custom Vision](https://www.customvision.ai/) [Power App]( https://make.powerapps.com)|
+| **Duration**                  | 1 hour                                                                |
 | **Just want to try the app or see the solution?** | *an optional link to the completed project sample app or solution folder*                          |
 | **Slides** | [Powerpoint](slides.pptx) 
                          
@@ -22,17 +22,17 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 
 ## Pre-Learning
 
-*add a link to Microsoft Learn for students to pre-learn the topic, if possible*
+[Get started with Computer Vision](https://docs.microsoft.com/en-us/learn/modules/analyze-images-computer-vision/)
+[Get started with Power App](https://docs.microsoft.com/en-us/learn/modules/get-started-with-powerapps/)
 
 ## Prerequisites
 
-*any installations that will be helpful, any hardware or software needed*
+Ability to navigate the Azure portal
+Familiarity with OneDrive, SharePoint, and Excel
 
 ## What students will learn
 
-*In this area, describe the scenario and intended solution, paraphrasing what is in the module or creating a brief description here*
-
-Example: Have you ever wanted to visit a museum virtually or explore its collections right from your home computer? In this workshop, use an API, or Application Programming Interface, to learn more about a museum collection.
+Do you want to customize an app by adding controls, images, and logic or create intelligent solutions that extract information from images, but just haven't start? If so, this workshop is what you'll need.
 
 *add a screenshot of the completed project*
 
@@ -74,11 +74,21 @@ Link to quiz or challenge on Learn
 
 ## Next steps
 
-*links to Microsoft Learn to further learning progress, and/or a path to certifications*
+Learning more about Custom Vision: https://docs.microsoft.com/en-us/learn/paths/explore-computer-vision-microsoft-azure/
+Learning more about Canvas App creation:https://docs.microsoft.com/en-us/learn/paths/create-powerapps/
+Azure Health bot by using built-in or custom scenarios: https://docs.microsoft.com/en-us/learn/paths/create-bots-azure-health-bot/
+AI business school for healthcare: https://docs.microsoft.com/en-us/learn/paths/ai-business-school-healthcare/?WT.mc_id=sitertzn_homepage_mslearn-card-aibusinessschool
 
 ## Optional Transfer Knowledge activity
 
-*suggest, or add as an addendum, a way to extend students knowledge of the topic by creating a new app or demo that builds on the original workshop materials.*
+The Computer Vision service provides many capabilities that you can use to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others.
+
+You can find out more about using the Computer Vision service in the [service documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/).
+
+With Power Apps, you can:
+Build an app quickly by using the skills that you already have.
+Connect to the cloud services and data sources that you're already using.
+Share your apps instantly so that coworkers can use them on their phones and tablets.
 
 ## Feedback
 
