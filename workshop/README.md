@@ -9,11 +9,10 @@ https://docs.microsoft.com/en-us/learn/modules/get-started-with-powerapps/
 
 In this workshop, we will discuss how to build a no-code app with Custom Vision to classify imagines 
 
-| **Goal**              |                                |
+| **Goal**              |                     Description           |
 | ----------------------------- | --------------------------------------------------------------------- |
 | **What will you learn**       | How to build an app with Power Apps and integrate Custom Vision to classify imagines                                        |
-| **What you'll need**          | [Custom Vision](https://www.customvision.ai/)
-[Power App]( https://make.powerapps.com)|
+| **What you'll need**          | [Custom Vision](https://www.customvision.ai/), [Power App]( https://make.powerapps.com)|
 | **Duration**                  | 1 hour                                                                |
 | **Just want to try the app or see the solution?** | *an optional link to the completed project sample app or solution folder*                          |
 | **Slides** | [Powerpoint](slides.pptx) 
@@ -77,19 +76,23 @@ Link to quiz or challenge on Learn
 ## Next steps
 
 Learning more about Custom Vision: https://docs.microsoft.com/en-us/learn/paths/explore-computer-vision-microsoft-azure/
+
 Learning more about Canvas App creation:https://docs.microsoft.com/en-us/learn/paths/create-powerapps/
+
 Azure Health bot by using built-in or custom scenarios: https://docs.microsoft.com/en-us/learn/paths/create-bots-azure-health-bot/
+
 AI business school for healthcare: https://docs.microsoft.com/en-us/learn/paths/ai-business-school-healthcare/?WT.mc_id=sitertzn_homepage_mslearn-card-aibusinessschool
 
 ## Optional Transfer Knowledge activity
 
-The Computer Vision service provides many capabilities that you can use to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others.
-
-You can find out more about using the Computer Vision service in the [service documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/).
+The Computer Vision service provides many capabilities that you can use to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others. You can find out more about using the Computer Vision service in the [service documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/).
 
 With Power Apps, you can:
+
 Build an app quickly by using the skills that you already have.
+
 Connect to the cloud services and data sources that you're already using.
+
 Share your apps instantly so that coworkers can use them on their phones and tablets.
 
 ## Feedback
