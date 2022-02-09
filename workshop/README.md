@@ -2,6 +2,7 @@
 Integrating Custom Vision with Power Apps for Diabetic Retinopathy Detection
 ## Module Source Link
 https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/
+
 https://docs.microsoft.com/en-us/learn/modules/get-started-with-powerapps/
 
 ## Goals
