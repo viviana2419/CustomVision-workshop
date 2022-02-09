@@ -12,7 +12,8 @@ In this workshop, we will discuss how to build a no-code app with Custom Vision 
 | **Goal**              |                                |
 | ----------------------------- | --------------------------------------------------------------------- |
 | **What will you learn**       | How to build an app with Power Apps and integrate Custom Vision to classify imagines                                        |
-| **What you'll need**          | [Custom Vision](https://www.customvision.ai/) [Power App]( https://make.powerapps.com)|
+| **What you'll need**          | [Custom Vision](https://www.customvision.ai/)
+[Power App]( https://make.powerapps.com)|
 | **Duration**                  | 1 hour                                                                |
 | **Just want to try the app or see the solution?** | *an optional link to the completed project sample app or solution folder*                          |
 | **Slides** | [Powerpoint](slides.pptx) 
@@ -24,6 +25,7 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 ## Pre-Learning
 
 [Get started with Computer Vision](https://docs.microsoft.com/en-us/learn/modules/analyze-images-computer-vision/)
+
 [Get started with Power App](https://docs.microsoft.com/en-us/learn/modules/get-started-with-powerapps/)
 
 ## Prerequisites
@@ -33,11 +35,10 @@ Familiarity with OneDrive, SharePoint, and Excel
 
 ## What students will learn
 
-Do you want to customize an app by adding controls, images, and logic or create intelligent solutions that extract information from images, but just haven't start? If so, this workshop is what you'll need.
+Do you want to customize an app by adding controls, images, and logic or create intelligent solutions that extract information from images, but just haven't started yet? If so, this workshop is what you'll need.
 
-*add a screenshot of the completed project*
+![image](https://user-images.githubusercontent.com/49314681/153230680-9351bded-4c7c-43e3-aa61-a9c5ae55f357.png)
 
-![image of completed project](images/placeholder.png)
 
 ## Milestone 1 (example)
 
