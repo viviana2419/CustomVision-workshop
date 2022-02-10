@@ -39,31 +39,31 @@ Do you want to customize an app by adding controls, images, and logic or create 
 ![image](https://user-images.githubusercontent.com/49314681/153230680-9351bded-4c7c-43e3-aa61-a9c5ae55f357.png)
 
 
-## Milestone 1 (example)
+## Milestone 1 - Custom Vision build up
 
 In this segment, you'll query an API at the Metropolitan Museum of Art
 
 [link to Learn module area](link)
 
-## Milestone 2
+## Milestone 2 - Generate Custom Vision link
 
 text
 
 link
 
-## Milestone 3
+## Milestone 3 - Layout of Power App
 
 text
 
 link
 
-## Milestone 4
+## Milestone 4 - Link Custom Vision model and Power App
 
 text
 
 link
 
-## Milestone 5
+## Milestone 5 - App accuracy test with new inputs
 
 text
 
