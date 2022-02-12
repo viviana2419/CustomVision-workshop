@@ -39,23 +39,69 @@ Do you want to customize an app by adding controls, images, and logic or create 
 ![image](https://user-images.githubusercontent.com/49314681/153230680-9351bded-4c7c-43e3-aa61-a9c5ae55f357.png)
 
 
-## Milestone 1 - Custom Vision build up
+## Milestone 1 - Custom Vision project build up
 
 In this segment, you'll query an API at the Metropolitan Museum of Art
 
-[link to Learn module area](link)
+In Azure, you can use the Custom Vision cognitive service to train an image classification model based on existing images. There are two elements to creating an image classification solution. First, you must train a model to recognize different classes using existing images. Then, when the model is trained you must publish it as a service that can be consumed by applications.
 
-## Milestone 2 - Generate Custom Vision link
+1.Let's begin by getting a dataset of diabetic retinopathy images. 
 
-text
+2.open the Custom Vision portal at https://customvision.ai. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
 
-link
+3.In the Custom Vision portal, create a new project with the following settings:
+
+    Name: Diabetic Retinopathy detection 
+    
+    Description: Image classification for Diabetic Retinopathy
+    
+    Resource: The Custom Vision resource you created previously
+    
+    Project Types: Classification
+    
+    Classification Types: Multiclass (single tag per image)?
+    
+    Domains: ?
+    
+4. Click [+] Add images, and select all of the files in the positive image folder you extracted previously. Then upload the image files, specifying the tag positive
+
+5. Repeat the previous step to upload the images in the negative folder with the tag negative
+
+6. In the Custom Vision project, above the images, click Train to train a classification model using the tagged images. Select the Quick Training option, and then wait for the training iteration to complete (this may take a minute or so).
+
+7. When the model iteration has been trained, review the Precision, Recall, and AP performance metrics - these measure the prediction accuracy of the classification model, and should all be high.
+
+## Milestone 2 - Test the model & Generate Custom Vision link
+
+Before publishing this iteration of the model for applications to use, you should test it.
+
+Above the performance metrics, click Quick Test.
+
+View the predictions returned by your model - the probability score should be around 90%
+
+Then, you can close the Quick Test window.
+
+Now you're ready to publish your trained model and use it from a client application!
+
+Click Publish to publish the trained model with the following settings:
+
+    Model name: Diabetic Retinopathy detection 
+
+    Prediction Resource: The prediction resource you created previously.
+
+After publishing, click the Prediction URL icon to see information required to use the published model. Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
 
 ## Milestone 3 - Layout of Power App
 
-text
+Go to https://make.powerapps.com and sign in with your organizational account.
 
-link
+The following figure shows the main development window when you enter Power Apps Studio:
+
+image?
+
+detailed process?
+
+The app can run on mobile, install the Power Apps Mobile app on your phone. When building an app, you should test it in the same form factor as your users!
 
 ## Milestone 4 - Link Custom Vision model and Power App
 
@@ -69,9 +115,11 @@ text
 
 link
 
-## Quiz or Code Challenge
+## Knowledge test
 
-Link to quiz or challenge on Learn
+https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/3a-knowledge-check
+
+https://docs.microsoft.com/en-us/learn/modules/get-started-with-powerapps/6-powerapps-quiz-get-started
 
 ## Next steps
 
@@ -83,9 +131,13 @@ Azure Health bot by using built-in or custom scenarios: https://docs.microsoft.c
 
 AI business school for healthcare: https://docs.microsoft.com/en-us/learn/paths/ai-business-school-healthcare/?WT.mc_id=sitertzn_homepage_mslearn-card-aibusinessschool
 
+The Value of Computer Vision in Healthcare Panel in [this video](https://www.youtube.com/watch?v=dbISoN71rrY)
+
+
+
 ## Optional Transfer Knowledge activity
 
-The Computer Vision service provides many capabilities that you can use to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others. You can find out more about using the Computer Vision service in the [service documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/).
+You can modify your app to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others. You can find out more about using the Computer Vision service in the [service documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/).
 
 With Power Apps, you can:
 
