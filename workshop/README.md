@@ -41,11 +41,9 @@ Do you want to customize an app by adding controls, images, and logic or create 
 
 ## Milestone 1 - Custom Vision project build up
 
-In this segment, you'll query an API at the Metropolitan Museum of Art
-
 In Azure, you can use the Custom Vision cognitive service to train an image classification model based on existing images. There are two elements to creating an image classification solution. First, you must train a model to recognize different classes using existing images. Then, when the model is trained you must publish it as a service that can be consumed by applications.
 
-1.Let's begin by getting a dataset of diabetic retinopathy images. 
+1.Let's begin by getting a dataset of diabetic retinopathy images?
 
 2.open the Custom Vision portal at https://customvision.ai. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
 
