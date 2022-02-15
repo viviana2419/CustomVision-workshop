@@ -1,9 +1,9 @@
 # Full Workshop Title
 Integrating Custom Vision with Power Apps for Diabetic Retinopathy Detection
 ## Module Source Link
-https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/
+https://docs.microsoft.com/learn/modules/classify-images-custom-vision/
 
-https://docs.microsoft.com/en-us/learn/modules/customize-apps-in-powerapps/
+https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/
 
 ## Goals
 
@@ -23,18 +23,28 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 
 ## Pre-Learning
 
-[Get started with Computer Vision](https://docs.microsoft.com/en-us/learn/modules/analyze-images-computer-vision/)
+[Get started with Computer Vision](https://docs.microsoft.com/learn/modules/analyze-images-computer-vision/)
 
-[Get started with Power App](https://docs.microsoft.com/en-us/learn/modules/get-started-with-powerapps/)
+[Get started with Power App](https://docs.microsoft.com/learn/modules/get-started-with-powerapps/)
 
 ## Prerequisites
 
-Ability to navigate the Azure portal
-Familiarity with OneDrive, SharePoint, and Excel
+You'll need to have an [Azure Account](https://azure-for-academics.github.io/getting-azure/). You may have one from your university, otherwise get [Azure for Students](https://azure.microsoft.com/free/students/), or an [Azure Free Trial](https://azure.microsoft.com/free/).
+
+Learn more about creating an Azure Account at [Microsoft Learn](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
+
 
 ## What students will learn
 
-Do you want to customize an app by adding controls, images, and logic or create intelligent solutions that extract information from images, but just haven't started yet? If so, this workshop is what you'll need.
+In this project, you will build an app that detect Diabetic Retinopathy  
+
+You will be able to...
+  1. Draw automatic & accurate detection insights from datasets
+  2. Use the Custom Vision service to create an image classification solution
+  3. Customize a Power app by adding controls, images, and logic.
+  
+What is Diabetic Retinopathy?
+  A diabetes complication that affects eyes, which might cause no symptoms or only mild vision problems at first. But it can lead to blindness. Careful management of diabetes is the best way to prevent vision loss. Patient should see an eye doctor for a yearly eye exam with dilation — even if the vision seems fine.
 
 ![image](https://user-images.githubusercontent.com/49314681/153230680-9351bded-4c7c-43e3-aa61-a9c5ae55f357.png)
 
@@ -43,7 +53,11 @@ Do you want to customize an app by adding controls, images, and logic or create 
 
 In Azure, you can use the Custom Vision cognitive service to train an image classification model based on existing images. There are two elements to creating an image classification solution. First, you must train a model to recognize different classes using existing images. Then, when the model is trained you must publish it as a service that can be consumed by applications.
 
-1.Let's begin by getting a dataset of diabetic retinopathy images?
+1.Let's begin by getting the dataset of diabetic retinopathy images
+
+  https://www.kaggle.com/linchundan/fundusimage1000
+  
+  https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip
 
 2.open the Custom Vision portal at https://customvision.ai. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
 
