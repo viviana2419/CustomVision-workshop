@@ -129,19 +129,19 @@ link
 
 ## Knowledge test
 
-https://docs.microsoft.com/en-us/learn/modules/classify-images-custom-vision/3a-knowledge-check
+https://docs.microsoft.com/learn/modules/classify-images-custom-vision/3a-knowledge-check
 
-https://docs.microsoft.com/en-us/learn/modules/get-started-with-powerapps/6-powerapps-quiz-get-started
+https://docs.microsoft.com/learn/modules/get-started-with-powerapps/6-powerapps-quiz-get-started
 
 ## Next steps
 
-Learning more about Custom Vision: https://docs.microsoft.com/en-us/learn/paths/explore-computer-vision-microsoft-azure/
+Learning more about Custom Vision: https://docs.microsoft.com/learn/paths/explore-computer-vision-microsoft-azure/
 
-Learning more about Canvas App creation:https://docs.microsoft.com/en-us/learn/paths/create-powerapps/
+Learning more about Canvas App creation:https://docs.microsoft.com/learn/paths/create-powerapps/
 
-Azure Health bot by using built-in or custom scenarios: https://docs.microsoft.com/en-us/learn/paths/create-bots-azure-health-bot/
+Azure Health bot by using built-in or custom scenarios: https://docs.microsoft.com/learn/paths/create-bots-azure-health-bot/
 
-AI business school for healthcare: https://docs.microsoft.com/en-us/learn/paths/ai-business-school-healthcare/?WT.mc_id=sitertzn_homepage_mslearn-card-aibusinessschool
+AI business school for healthcare: https://docs.microsoft.com/learn/paths/ai-business-school-healthcare/?WT.mc_id=sitertzn_homepage_mslearn-card-aibusinessschool
 
 The Value of Computer Vision in Healthcare Panel in [this video](https://www.youtube.com/watch?v=dbISoN71rrY)
 
@@ -149,7 +149,7 @@ The Value of Computer Vision in Healthcare Panel in [this video](https://www.you
 
 ## Optional Transfer Knowledge activity
 
-You can modify your app to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others. You can find out more about using the Computer Vision service in the [service documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/).
+You can modify your app to analyze images, including generating a descriptive caption, extracting relevant tags, identifying objects, determining image type and metadata, detecting human faces, known brands, and celebrities, and others. You can find out more about using the Computer Vision service in the [service documentation](https://docs.microsoft.com/azure/cognitive-services/computer-vision/).
 
 With Power Apps, you can:
 
