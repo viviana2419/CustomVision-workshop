@@ -53,15 +53,16 @@ What is Diabetic Retinopathy?
 
 In Azure, you can use the Custom Vision cognitive service to train an image classification model based on existing images. There are two elements to creating an image classification solution. First, you must train a model to recognize different classes using existing images. Then, when the model is trained you must publish it as a service that can be consumed by applications.
 
-1.Let's begin by getting the dataset of diabetic retinopathy images
+1. Let's begin by getting the dataset of diabetic retinopathy images
 
   https://www.kaggle.com/linchundan/fundusimage1000
   
   https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip
 
-2.open the Custom Vision portal at https://customvision.ai. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
+2. Open the Custom Vision portal at https://customvision.ai. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
 
-3.In the Custom Vision portal, create a new project with the following settings:
+3. In the Custom Vision portal, create a new project with the following settings:
+
 
     Name: Diabetic Retinopathy detection 
     
@@ -75,6 +76,7 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
     
     Domains: ?
     
+
 4. Click [+] Add images, and select all of the files in the positive image folder you extracted previously. Then upload the image files, specifying the tag positive
 
 5. Repeat the previous step to upload the images in the negative folder with the tag negative
@@ -83,15 +85,19 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
 
 7. When the model iteration has been trained, review the Precision, Recall, and AP performance metrics - these measure the prediction accuracy of the classification model, and should all be high.
 
+   * Precision indicates the fraction of identified classifications that were correct. For example, if the model identified 100 images as dogs, and 99 of them were actually of dogs, then the precision would be 99%.
+   * Recall indicates the fraction of actual classifications that were correctly identified. For example, if there were actually 100 images of apples, and the model identified 80 as apples, the recall would be 80%.
+   * Mean average precision is the average value of the average precision (AP). AP is the area under the precision/recall curve (precision plotted against recall for each prediction made).
+![image](https://user-images.githubusercontent.com/49314681/154698660-1ead1be2-bd3a-47ac-8938-e40c73ab82c9.png)
+
+
 ## Milestone 2 - Test the model & Generate Custom Vision link
 
 Before publishing this iteration of the model for applications to use, you should test it.
 
-Above the performance metrics, click Quick Test.
-
-View the predictions returned by your model - the probability score should be around 90%
-
-Then, you can close the Quick Test window.
+1. Above the performance metrics, click 'Quick Test'. View the predictions returned by your model - the probability score should be around 90%
+2. In the Quick Test window, select in the Submit Image field and enter the URL of the image you want to use for your test. If you want to use a locally stored image instead, select the Browse local files button and select a local image file.
+3. The image you select appears in the middle of the page. Then the prediction results appear below the image in the form of a table with two columns, labeled Tags and Confidence. After you view the results, you may close the Quick Test window.
 
 Now you're ready to publish your trained model and use it from a client application!
 
@@ -109,15 +115,22 @@ Go to https://make.powerapps.com and sign in with your organizational account.
 
 The following figure shows the main development window when you enter Power Apps Studio:
 
-image?
+![image](https://user-images.githubusercontent.com/49314681/154696362-9b2cc7c7-a128-43c5-b5bc-50ae81271788.png)
 
-detailed process?
+![image](https://user-images.githubusercontent.com/49314681/154700454-9167caf1-a1a2-4e6a-94c9-7ad135296c72.png)
+
+After performing all the above steps, you get a Power Apps studio which will look like the image below. Here you can create your  application using drag and drop and some basic formulas.
+![image](https://user-images.githubusercontent.com/49314681/154700636-e386f4ce-a1db-4a00-bf34-c2e0d9b266ce.png)
 
 The app can run on mobile, install the Power Apps Mobile app on your phone. When building an app, you should test it in the same form factor as your users!
 
 ## Milestone 4 - Link Custom Vision model and Power App
 
-text
+Now we will have a look at the steps to connecting our application to Custom Vision
+
+1. We need to connect to Custom Vision by going Data source→(search Custom Vision) → Select Custom Vision → Choose a table/entity.
+![image](https://user-images.githubusercontent.com/49314681/154702946-e50aca72-ec96-4391-aa2c-f260bdb07615.png)
+
 
 link
 
