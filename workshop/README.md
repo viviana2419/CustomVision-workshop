@@ -119,8 +119,34 @@ The following figure shows the main development window when you enter Power Apps
 
 ![image](https://user-images.githubusercontent.com/49314681/154700454-9167caf1-a1a2-4e6a-94c9-7ad135296c72.png)
 
-After performing all the above steps, you get a Power Apps studio which will look like the image below. Here you can create your  application using drag and drop and some basic formulas.
-![image](https://user-images.githubusercontent.com/49314681/154700636-e386f4ce-a1db-4a00-bf34-c2e0d9b266ce.png)
+Next, we'll build up the navigation screen when you enter the app. 
+![image](https://user-images.githubusercontent.com/49314681/154807189-cb262ccd-8541-47db-b817-99f09ee07447.png)
+ * There'll be a label of our app at the top, refer as "Diabetic Retinopathy Detector", or as what naming you prefer
+ * Add two buttons, one 'Camera Test', another 'Upload Image'
+ 
+Then we'll create the 'CameraTestScreen', which is finalized like this and linked to the 'Camera Test' button
+![image](https://user-images.githubusercontent.com/49314681/154807465-1e3d7b11-5634-4a0f-81ad-18d2dcf08cde.png)
+ * Add the 'Camera' feature for detection functionality on phone or tablet
+ * The Gallery?
+   * fx: cameracol
+ * Finally, add one button 'Back' to navigate back to the main screen
+   * fx: Navigate('Navigation Screen')
+
+The thrid screen is 'GalleryTestScreen', which looks like this and is linked to the 'Upload Image' button
+![image](https://user-images.githubusercontent.com/49314681/154808073-79c740db-66cc-4205-9f34-94f5c82b41d4.png)
+ * Create a group called 'AddMediaWithImage'
+   * One AddMediaButton
+   * One UploadedImage
+ * Add one Gallery, similar to the functionality of what we mentioned above
+ * Add on button to scan the image
+   * fx: ClearCollect(gallerycol,CustomVision.ClassifyImageV2("245ead5e-f864-429a-9270-194fdb7df850", "Iteration2", UploadedImage1).predictions)
+ * Finally, add one button 'Back' to navigate back to the main screen
+   * fx: Navigate('Navigation Screen')
+
+Go back to your 'Navigation Screen', click 'Camera Test' button add 'Navigate(CameraTestScreen)' to function. Similarly, add 'Navigate(GalleryTestScreen)' to 'Upload Image' button. 
+
+After performing all the above steps, you get a Power Apps with screens and functions which will look like the image below. 
+![image](https://user-images.githubusercontent.com/49314681/154808685-0902d369-32d0-4d6c-8e7c-ef460593a0e6.png)
 
 The app can run on mobile, install the Power Apps Mobile app on your phone. When building an app, you should test it in the same form factor as your users!
 
