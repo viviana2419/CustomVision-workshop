@@ -72,9 +72,9 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
     
     Project Types: Classification
     
-    Classification Types: Multiclass (single tag per image)?
+    Classification Types: Multiclass (single tag per image)
     
-    Domains: ?
+    Domains: General
     
 
 4. Click [+] Add images, and select all of the files in the positive image folder you extracted previously. Then upload the image files, specifying the tag positive
@@ -158,13 +158,26 @@ Now we will have a look at the steps to connecting our application to Custom Vis
 ![image](https://user-images.githubusercontent.com/49314681/154702946-e50aca72-ec96-4391-aa2c-f260bdb07615.png)
 
 
-link
 
 ## Milestone 5 - App accuracy test with new inputs
 
-text
+Now that your app is built, the next step is to start testing it.
 
-link
+Unit test
+* A unit test is used to check whether a specific function or feature of your app is working correctly.
+* let's start from refering back to the Planning phase and Designing phase sections to make sure you test all the important scenarios. Make sure you break the tests down to each feature or function. 
+* For testing inside canvas apps, you can use a built-in tool named Power Apps Test Studio to write, organize, and automate tests for canvas apps. More info: https://docs.microsoft.com/powerapps/maker/canvas-apps/test-studio
+
+End-to-end test
+* End-to-end tests are used to check whether the overall solution runs correctly. 
+* You can conduct this test by following a test scenario that's close to the use case of the actual business process.
+
+User acceptance test (Optional)
+* A user acceptance test (UAT) is done by the user of the app instead of the maker. This test is to ensure that what has been built by the makers matches the requirements initially requested by the user.
+* Test your app with families, friends and others with diversity in terms of IT skill levels. This way, you can get a variety of feedback.
+* You can quickly review issues and see recommended fixes with [solution checker](https://docs.microsoft.com/powerapps/maker/data-platform/use-powerapps-checker)
+
+Congratulations! You made your first app, and it's tested and ready to go! Now you can [publish](https://docs.microsoft.com/powerapps/maker/canvas-apps/save-publish-app) and [share](https://docs.microsoft.com/powerapps/maker/canvas-apps/share-app) your canvas app!
 
 ## Knowledge test
 
