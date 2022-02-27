@@ -29,9 +29,13 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 
 ## Prerequisites
 
-You'll need to have an [Azure Account](https://azure-for-academics.github.io/getting-azure/). You may have one from your university, otherwise get [Azure for Students](https://azure.microsoft.com/free/students/), or an [Azure Free Trial](https://azure.microsoft.com/free/).
+You'll need to have an [Azure Account](https://azure-for-academics.github.io/getting-azure/) for Custom Vision Service. You may get free credits from [Azure for Students](https://azure.microsoft.com/free/students/), or [Azure Free Trial](https://azure.microsoft.com/free/).
 
 Learn more about creating an Azure Account at [Microsoft Learn](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
+
+Moreover, If you haven’t already, [sign up for free](https://powerapps.microsoft.com/) at PowerApps.com with a work or school account. Once you’ve signed up, you’ll be able to [sign in](https://web.powerapps.com/) to PowerApps on the web. 
+
+Learn more about [joining Microsoft Developer program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) and [creating a PowerApp Account](https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-with-a-power-apps-community-developer-account/ba-p/2693859) 
 
 
 ## What students will learn
@@ -80,6 +84,7 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
 4. Click [+] Add images, and select all of the files in the positive image folder you extracted previously. Then upload the image files, specifying the tag positive
 
 5. Repeat the previous step to upload the images in the negative folder with the tag negative
+![image](https://user-images.githubusercontent.com/49314681/155886702-1624d8ba-6597-49e5-9f65-97c3b7c35eb9.png)
 
 6. In the Custom Vision project, above the images, click Train to train a classification model using the tagged images. Select the Quick Training option, and then wait for the training iteration to complete (this may take a minute or so).
 
@@ -88,7 +93,7 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
    * Precision indicates the fraction of identified classifications that were correct. For example, if the model identified 100 images as dogs, and 99 of them were actually of dogs, then the precision would be 99%.
    * Recall indicates the fraction of actual classifications that were correctly identified. For example, if there were actually 100 images of apples, and the model identified 80 as apples, the recall would be 80%.
    * Mean average precision is the average value of the average precision (AP). AP is the area under the precision/recall curve (precision plotted against recall for each prediction made).
-![image](https://user-images.githubusercontent.com/49314681/154698660-1ead1be2-bd3a-47ac-8938-e40c73ab82c9.png)
+![image](https://user-images.githubusercontent.com/49314681/155886624-4209eff5-e132-4c11-9593-b437a62c975b.png)
 
 
 ## Milestone 2 - Test the model & Generate Custom Vision link
@@ -98,6 +103,7 @@ Before publishing this iteration of the model for applications to use, you shoul
 1. Above the performance metrics, click 'Quick Test'. View the predictions returned by your model - the probability score should be around 90%
 2. In the Quick Test window, select in the Submit Image field and enter the URL of the image you want to use for your test. If you want to use a locally stored image instead, select the Browse local files button and select a local image file.
 3. The image you select appears in the middle of the page. Then the prediction results appear below the image in the form of a table with two columns, labeled Tags and Confidence. After you view the results, you may close the Quick Test window.
+![image](https://user-images.githubusercontent.com/49314681/155886729-36553579-5027-4018-ae34-a2112f72659b.png)
 
 Now you're ready to publish your trained model and use it from a client application!
 
@@ -127,21 +133,22 @@ Next, we'll build up the navigation screen when you enter the app.
 Then we'll create the 'CameraTestScreen', which is finalized like this and linked to the 'Camera Test' button
 ![image](https://user-images.githubusercontent.com/49314681/154807465-1e3d7b11-5634-4a0f-81ad-18d2dcf08cde.png)
  * Add the 'Camera' feature for detection functionality on phone or tablet
- * The Gallery?
-   * fx: cameracol
+ * Search 'Gallery' function in the insert tab and add it to the page
+   * A Gallery control can show multiple records from a data source, and each record can contain multiple types of data. We use it to show the classification of the image based on the trained dataset
  * Finally, add one button 'Back' to navigate back to the main screen
-   * fx: Navigate('Navigation Screen')
+   * input function: Navigate('Navigation Screen')
 
 The thrid screen is 'GalleryTestScreen', which looks like this and is linked to the 'Upload Image' button
 ![image](https://user-images.githubusercontent.com/49314681/154808073-79c740db-66cc-4205-9f34-94f5c82b41d4.png)
  * Create a group called 'AddMediaWithImage'
    * One AddMediaButton
    * One UploadedImage
- * Add one Gallery, similar to the functionality of what we mentioned above
+   * When we group the button with background image together, user can click anywhere within the image to triger the function
+ * Add one Gallery, similar to the process and functionality of what we mentioned above
  * Add on button to scan the image
-   * fx: ClearCollect(gallerycol,CustomVision.ClassifyImageV2("245ead5e-f864-429a-9270-194fdb7df850", "Iteration2", UploadedImage1).predictions)
+   * By managing the right section setting, PowerApp would generate the following function: ClearCollect(gallerycol,CustomVision.ClassifyImageV2("245ead5e-f864-429a-9270-194fdb7df850", "Iteration2", UploadedImage1).predictions)
  * Finally, add one button 'Back' to navigate back to the main screen
-   * fx: Navigate('Navigation Screen')
+   * input function: Navigate('Navigation Screen')
 
 Go back to your 'Navigation Screen', click 'Camera Test' button add 'Navigate(CameraTestScreen)' to function. Similarly, add 'Navigate(GalleryTestScreen)' to 'Upload Image' button. 
 
