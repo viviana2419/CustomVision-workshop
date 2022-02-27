@@ -1,5 +1,5 @@
-# Full Workshop Title
-Integrating Custom Vision with Power Apps for Diabetic Retinopathy Detection
+# Integrating Custom Vision with Power Apps for Diabetic Retinopathy Detection
+
 ## Module Source Link
 https://docs.microsoft.com/learn/modules/classify-images-custom-vision/
 
@@ -16,6 +16,7 @@ In this workshop, we will discuss how to build a no-code app with Custom Vision 
 | **Duration**                  | 1 hour                                                                |
 | **Just want to try the app or see the solution?** | *an optional link to the completed project sample app or solution folder*                          |
 | **Slides** | [Powerpoint](slides.pptx) 
+| **Author**                  | Jingyi Zhu                                                                |
                          
 ## Video
 
