@@ -15,7 +15,7 @@ In this workshop, we will discuss how to build a no-code app with Custom Vision 
 | **What you'll need**          | [Custom Vision](https://www.customvision.ai/), [Power App]( https://make.powerapps.com)|
 | **Duration**                  | 1 hour                                                                |
 | **Just want to try the app or see the solution?** | *an optional link to the completed project sample app or solution folder*                          |
-| **Slides** | [Powerpoint](slide.pptx) 
+| **Slides** | [Powerpoint](slides.pptx) 
 | **Author**                  | Jingyi Zhu                                                                |
                          
 ## Video
