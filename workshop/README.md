@@ -143,7 +143,9 @@ The thrid screen is 'GalleryTestScreen', which looks like this and is linked to 
 ![image](https://user-images.githubusercontent.com/49314681/154808073-79c740db-66cc-4205-9f34-94f5c82b41d4.png)
  * Create a group called 'AddMediaWithImage'
    * One AddMediaButton
+    *  input function:"Tap or click to add a picture"
    * One UploadedImage
+    * input function: If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
    * When we group the button with background image together, user can click anywhere within the image to triger the function
  * Add one Gallery, similar to the process and functionality of what we mentioned above
  * Add on button to scan the image
