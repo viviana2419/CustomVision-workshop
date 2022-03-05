@@ -30,13 +30,13 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
 
 ## Prerequisites
 
-You'll need to have an [Azure Account](https://azure-for-academics.github.io/getting-azure/) for Custom Vision Service. You may get free credits from [Azure for Students](https://azure.microsoft.com/free/students/), or [Azure Free Trial](https://azure.microsoft.com/free/).
+1. You'll need to have an [Azure Account](https://azure-for-academics.github.io/getting-azure/) for Custom Vision Service. You may get free credits from [Azure for Students](https://azure.microsoft.com/free/students/), or [Azure Free Trial](https://azure.microsoft.com/free/).
 
-Learn more about creating an Azure Account at [Microsoft Learn](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
+    Learn more about creating an Azure Account at [Microsoft Learn](https://docs.microsoft.com/learn/modules/create-an-azure-account/)
 
-Moreover, If you haven’t already, [sign up for free](https://powerapps.microsoft.com/) at PowerApps.com with a work or school account. Once you’ve signed up, you’ll be able to [sign in](https://web.powerapps.com/) to PowerApps on the web. 
+2. Moreover, If you haven’t already, [sign up for free](https://powerapps.microsoft.com/) at PowerApps.com with a work or school account. Once you’ve signed up, you’ll be able to [sign in](https://web.powerapps.com/) to PowerApps on the web. 
 
-Learn more about [joining Microsoft Developer program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) and [creating a PowerApp Account](https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-with-a-power-apps-community-developer-account/ba-p/2693859) 
+    Learn more about [joining Microsoft Developer program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) and [creating a PowerApp Account](https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-with-a-power-apps-community-developer-account/ba-p/2693859) 
 
 
 ## What students will learn
@@ -60,36 +60,66 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
 
 1. Let's begin by getting the dataset of diabetic retinopathy images
 
-  https://www.kaggle.com/linchundan/fundusimage1000
-  
-  https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip
+    https://www.kaggle.com/linchundan/fundusimage1000
 
-2. Open the Custom Vision portal at https://customvision.ai. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
+    https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip
 
-3. In the Custom Vision portal, create a new project with the following settings:
+2. Open the Azure portal at https://portal.azure.com/. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
+![image](https://user-images.githubusercontent.com/49314681/156890834-f302abcb-8a1c-4f07-8c4c-20052ddc18df.png)
 
 
-    Name: Diabetic Retinopathy detection 
-    
-    Description: Image classification for Diabetic Retinopathy
-    
-    Resource: The Custom Vision resource you created previously
-    
-    Project Types: Classification
-    
-    Classification Types: Multiclass (single tag per image)
-    
-    Domains: General
-    
+3. Click the Custom Vision section, then you'll enter this page:
+  ![image](https://user-images.githubusercontent.com/49314681/156890910-7e75e2b1-1908-4823-8cfc-59f6277979b9.png)
 
-4. Click [+] Add images, and select all of the files in the positive image folder you extracted previously. Then upload the image files, specifying the tag positive
+    * Let's create a new project with the following settings:
 
-5. Repeat the previous step to upload the images in the negative folder with the tag negative
-![image](https://user-images.githubusercontent.com/49314681/155886702-1624d8ba-6597-49e5-9f65-97c3b7c35eb9.png)
+      Create options: Both
 
-6. In the Custom Vision project, above the images, click Train to train a classification model using the tagged images. Select the Quick Training option, and then wait for the training iteration to complete (this may take a minute or so).
+      Project Details: 
+      
+          Subscription: Visual Studio Enterprise Subscription 
+          
+          Resource group: DRDEMO 
 
-7. When the model iteration has been trained, review the Precision, Recall, and AP performance metrics - these measure the prediction accuracy of the classification model, and should all be high.
+      Instance Details:
+      
+          Region: the one closest to you
+
+          Name: DRDEMO101
+      
+      Training and Prediction Resource:
+      
+          Pricing tier: Standard
+          
+    Click 'Review+create', then you will have the resource group available
+    ![image](https://user-images.githubusercontent.com/49314681/156891388-239bdaa4-eba6-4918-aa1c-592ea948954b.png)
+
+      
+4. Next, login to the [Custom Vision portal](https://www.customvision.ai/), create a new project with the following settings:
+
+   ![image](https://user-images.githubusercontent.com/49314681/156891552-09ef5f49-165f-47a8-9420-3811e275c914.png)
+
+          Name: Diabetic Retinopathy detection 
+
+          Description: Image classification for Diabetic Retinopathy
+
+          Resource: The resource you created previously
+
+          Project Types: Classification
+
+          Classification Types: Multiclass (single tag per image)
+
+          Domains: General[A2]
+   Then, click 'Create Project'
+
+5. You will enter the User Interface of Custom Vision like the one below. Click [+] Add images, and select all of the files in the positive image folder you extracted previously. Then upload the image files, specifying the tag positive
+   ![image](https://user-images.githubusercontent.com/49314681/156891847-a2a36206-9aae-49a5-a126-5cd83b75af48.png)
+
+6. Repeat the previous step to upload the images in the negative folder with the tag negative
+
+7. In the Custom Vision project, above the images, click Train to train a classification model using the tagged images. Select the Quick Training option, and then wait for the training iteration to complete (this may take a minute or so).
+
+8. When the model iteration has been trained, review the Precision, Recall, and AP performance metrics - these measure the prediction accuracy of the classification model, and should all be high.
 
    * Precision indicates the fraction of identified classifications that were correct. For example, if the model identified 100 images as dogs, and 99 of them were actually of dogs, then the precision would be 99%.
    * Recall indicates the fraction of actual classifications that were correctly identified. For example, if there were actually 100 images of apples, and the model identified 80 as apples, the recall would be 80%.
@@ -110,13 +140,13 @@ Now you're ready to publish your trained model and use it from a client applicat
 
 Click Publish to publish the trained model with the following settings:
 
-    Model name: Diabetic Retinopathy detection 
+        Model name: Diabetic Retinopathy detection 
 
-    Prediction Resource: The prediction resource you created previously.
+        Prediction Resource: The prediction resource you created previously.
 
 After publishing, click the Prediction URL icon to see information required to use the published model. Later, you will need the appropriate URL and Prediction-Key values to get a prediction from an Image URL, so keep this dialog box open and carry on to the next task.
 
-## Milestone 3 - Layout of Power App
+## Milestone 3 - Link Custom Vision model and Power App
 
 Go to https://make.powerapps.com and sign in with your organizational account.
 
@@ -126,47 +156,66 @@ The following figure shows the main development window when you enter Power Apps
 
 ![image](https://user-images.githubusercontent.com/49314681/154700454-9167caf1-a1a2-4e6a-94c9-7ad135296c72.png)
 
+Now we will have a look at the steps to connecting our application to Custom Vision
+
+1. We need to connect to Custom Vision by going Data source→(search Custom Vision) → Select Custom Vision → Choose a table/entity.
+![image](https://user-images.githubusercontent.com/49314681/154702946-e50aca72-ec96-4391-aa2c-f260bdb07615.png)
+2. Then you will be asked to enter the Prediction Key and Site URL. We'll go back to Custom Vision Performance tab and find the Prediction Key like the image below
+![image](https://user-images.githubusercontent.com/49314681/156895454-3b757112-05e9-4df7-aafb-cc751b08fb5e.png)
+
+We'll use only a portion of the image file URL like the image below
+![image](https://user-images.githubusercontent.com/49314681/156895503-fe8448d3-aedf-4f7f-9b6d-b86c524c0259.png)
+
+Click 'Connect' then your Custom Vision data resource will appear in your left pane!
+
+## Milestone 4 - Layout of Power App
+Now, we'll create the 'CameraTestScreen'
+ * First, add the 'Camera' feature for detection functionality on phone or tablet
+ ![image](https://user-images.githubusercontent.com/49314681/156895614-a5e6fc20-3f60-429a-b4ca-c6bdb37e67e7.png)
+ * Then, add one button 'Scan'. Its OnSelect function should be as below as we are using the [ClearCollect](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect) and [camercol](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/controls/control-camera):
+ ![image](https://user-images.githubusercontent.com/49314681/156895856-1c5b2d41-1e65-4935-9ae0-ce02b855dfa1.png)
+ * Next, let's insert a gallery to show the scaning process.
+ ![image](https://user-images.githubusercontent.com/49314681/156896003-5332ca53-1461-49e5-b1fa-a66686aa13be.png)
+   * When prompted, choose camercol as the resource group
+   * In properties, choose Layout as 'title and subtitle', and font color as yellow or as you like
+   ![image](https://user-images.githubusercontent.com/49314681/156896141-66d08fdf-d059-4167-9036-19ae543add26.png)
+   * Then, Click 'Title2' in the left pane. Modify its function as ThisItem.tagName and change font color as yellow or as you like
+   ![image](https://user-images.githubusercontent.com/49314681/156896243-03154b21-76a8-40fc-8ddb-6d1b6a49f311.png)
+   * Moving on to 'Subtitle2' in the left pane, we are going to use it showing the percentage of positive or negative detection result. Modify its function as Round(ThisItem.probability*100,2)&"%" and change font color as yellow or as you like
+   ![image](https://user-images.githubusercontent.com/49314681/156896384-d87caf9c-16dd-42c7-a780-3c333ac48707.png)
+ * Lastly, rename the screen name as 'CameraTestScreen'. 
+
+The second screen is 'GalleryTestScreen', which looks like this 
+![image](https://user-images.githubusercontent.com/49314681/154808073-79c740db-66cc-4205-9f34-94f5c82b41d4.png)
+ * First, let's add the 'add picture' function
+ ![image](https://user-images.githubusercontent.com/49314681/156896517-de8ede06-50eb-40cc-a18a-0c4567281ed1.png)
+   It should generate the box like below
+   ![image](https://user-images.githubusercontent.com/49314681/156896572-c6d0d114-b7eb-4c6b-9a0e-3635c5889408.png)
+   
+ * Then, add one button 'Scan'. Its OnSelect function should be as below 
+   
+   ![image](https://user-images.githubusercontent.com/49314681/156896653-0d3aa25f-4133-4190-a854-ad61dacf267e.png)
+ * Next, let's insert a gallery, similar process as we add it in the first camera screen
+ * You can test out the the detection process using the preview!
+ ![image](https://user-images.githubusercontent.com/49314681/156899193-09aa0649-1ad0-4e81-ae24-415cedd3c9fb.png)
+
 Next, we'll build up the navigation screen when you enter the app. 
 ![image](https://user-images.githubusercontent.com/49314681/154807189-cb262ccd-8541-47db-b817-99f09ee07447.png)
+ * Let's change the background to 'Black' and add the background image
+ ![image](https://user-images.githubusercontent.com/49314681/156899255-091f9240-62c9-475e-a982-7cf7eece9b06.png)
  * There'll be a label of our app at the top, refer as "Diabetic Retinopathy Detector", or as what naming you prefer
- * Add two buttons, one 'Camera Test', another 'Upload Image'
- 
-Then we'll create the 'CameraTestScreen', which is finalized like this and linked to the 'Camera Test' button
-![image](https://user-images.githubusercontent.com/49314681/154807465-1e3d7b11-5634-4a0f-81ad-18d2dcf08cde.png)
- * Add the 'Camera' feature for detection functionality on phone or tablet
- * Search 'Gallery' function in the insert tab and add it to the page
-   * A Gallery control can show multiple records from a data source, and each record can contain multiple types of data. We use it to show the classification of the image based on the trained dataset
- * Finally, add one button 'Back' to navigate back to the main screen
-   * input function: Navigate('Navigation Screen')
+ ![image](https://user-images.githubusercontent.com/49314681/156899297-be53bb6d-2a20-40e6-a4d4-4a4ad46ba77e.png)
+ * Add two buttons, one 'Camera Test', another 'Upload Image', modify the OnSelect function to navigate the clicking action
+ ![image](https://user-images.githubusercontent.com/49314681/156899356-9b38e0a2-b452-4d1b-98a5-be8c86f71844.png)
 
-The thrid screen is 'GalleryTestScreen', which looks like this and is linked to the 'Upload Image' button
-![image](https://user-images.githubusercontent.com/49314681/154808073-79c740db-66cc-4205-9f34-94f5c82b41d4.png)
- * Create a group called 'AddMediaWithImage'
-   * One AddMediaButton
-    *  input function:"Tap or click to add a picture"
-   * One UploadedImage
-    * input function: If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
-   * When we group the button with background image together, user can click anywhere within the image to triger the function
- * Add one Gallery, similar to the process and functionality of what we mentioned above
- * Add on button to scan the image
-   * By managing the right section setting, PowerApp would generate the following function: ClearCollect(gallerycol,CustomVision.ClassifyImageV2("245ead5e-f864-429a-9270-194fdb7df850", "Iteration2", UploadedImage1).predictions)
- * Finally, add one button 'Back' to navigate back to the main screen
+ * Finally, add one button 'Back' in the camera and galary screen to navigate back to the main screen
    * input function: Navigate('Navigation Screen')
-
-Go back to your 'Navigation Screen', click 'Camera Test' button add 'Navigate(CameraTestScreen)' to function. Similarly, add 'Navigate(GalleryTestScreen)' to 'Upload Image' button. 
+   ![image](https://user-images.githubusercontent.com/49314681/156899403-3ab07a8e-5652-47a4-b161-a24e6e71089d.png)
 
 After performing all the above steps, you get a Power Apps with screens and functions which will look like the image below. 
 ![image](https://user-images.githubusercontent.com/49314681/154808685-0902d369-32d0-4d6c-8e7c-ef460593a0e6.png)
 
 The app can run on mobile, install the Power Apps Mobile app on your phone. When building an app, you should test it in the same form factor as your users!
-
-## Milestone 4 - Link Custom Vision model and Power App
-
-Now we will have a look at the steps to connecting our application to Custom Vision
-
-1. We need to connect to Custom Vision by going Data source→(search Custom Vision) → Select Custom Vision → Choose a table/entity.
-![image](https://user-images.githubusercontent.com/49314681/154702946-e50aca72-ec96-4391-aa2c-f260bdb07615.png)
-
 
 
 ## Milestone 5 - App accuracy test with new inputs
