@@ -178,7 +178,7 @@ Now, we'll create the 'CameraTestScreen'
  ![image](https://user-images.githubusercontent.com/49314681/156896003-5332ca53-1461-49e5-b1fa-a66686aa13be.png)
    * When prompted, choose camercol as the resource group
    * In properties, choose Layout as 'title and subtitle', and font color as yellow or as you like
-   ![image](https://user-images.githubusercontent.com/49314681/156896141-66d08fdf-d059-4167-9036-19ae543add26.png)
+   ![image](https://user-images.githubusercontent.com/49314681/157041650-905858aa-e4ac-470b-9f20-c0811a09a8af.png)
    * Then, Click 'Title2' in the left pane. Modify its function as ThisItem.tagName and change font color as yellow or as you like
    ![image](https://user-images.githubusercontent.com/49314681/156896243-03154b21-76a8-40fc-8ddb-6d1b6a49f311.png)
    * Moving on to 'Subtitle2' in the left pane, we are going to use it showing the percentage of positive or negative detection result. Modify its function as Round(ThisItem.probability*100,2)&"%" and change font color as yellow or as you like
