@@ -173,6 +173,7 @@ Now, we'll create the 'CameraTestScreen'
  * First, add the 'Camera' feature for detection functionality on phone or tablet
  ![image](https://user-images.githubusercontent.com/49314681/156895614-a5e6fc20-3f60-429a-b4ca-c6bdb37e67e7.png)
  * Then, add one button 'Scan'. Its OnSelect function should be similar as below as we are using the [ClearCollect](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect), and we are naming it as camercol 
+ 
  ![image](https://user-images.githubusercontent.com/49314681/157070358-8c30a818-7fbe-49fb-b46a-c6ecf21c4111.png)
  * Next, let's insert a gallery to show the scaning process, 
  ![image](https://user-images.githubusercontent.com/49314681/156896003-5332ca53-1461-49e5-b1fa-a66686aa13be.png)
