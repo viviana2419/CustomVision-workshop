@@ -172,13 +172,13 @@ Click 'Connect' then your Custom Vision data resource will appear in your left p
 Now, we'll create the 'CameraTestScreen'
  * First, add the 'Camera' feature for detection functionality on phone or tablet
  ![image](https://user-images.githubusercontent.com/49314681/156895614-a5e6fc20-3f60-429a-b4ca-c6bdb37e67e7.png)
- * Then, add one button 'Scan'. Its OnSelect function should be as below as we are using the [ClearCollect](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect) and [camercol](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/controls/control-camera):
- ![image](https://user-images.githubusercontent.com/49314681/156895856-1c5b2d41-1e65-4935-9ae0-ce02b855dfa1.png)
- * Next, let's insert a gallery to show the scaning process.
+ * Then, add one button 'Scan'. Its OnSelect function should be similar as below as we are using the [ClearCollect](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect), and we are naming it as camercol 
+ ![image](https://user-images.githubusercontent.com/49314681/157070358-8c30a818-7fbe-49fb-b46a-c6ecf21c4111.png)
+ * Next, let's insert a gallery to show the scaning process, 
  ![image](https://user-images.githubusercontent.com/49314681/156896003-5332ca53-1461-49e5-b1fa-a66686aa13be.png)
    * When prompted, choose camercol as the resource group
    * In properties, choose Layout as 'title and subtitle', and font color as yellow or as you like
-   ![image](https://user-images.githubusercontent.com/49314681/157041650-905858aa-e4ac-470b-9f20-c0811a09a8af.png)
+   ![image](https://user-images.githubusercontent.com/49314681/157069405-2b2a2270-7322-40e4-ab57-22e6fe1ecd10.png)
    * Then, Click 'Title2' in the left pane. Modify its function as ThisItem.tagName and change font color as yellow or as you like
    ![image](https://user-images.githubusercontent.com/49314681/156896243-03154b21-76a8-40fc-8ddb-6d1b6a49f311.png)
    * Moving on to 'Subtitle2' in the left pane, we are going to use it showing the percentage of positive or negative detection result. Modify its function as Round(ThisItem.probability*100,2)&"%" and change font color as yellow or as you like
@@ -192,14 +192,13 @@ The second screen is 'GalleryTestScreen', which looks like this
    It should generate the box like below
    ![image](https://user-images.githubusercontent.com/49314681/156896572-c6d0d114-b7eb-4c6b-9a0e-3635c5889408.png)
    
- * Then, add one button 'Scan'. Its OnSelect function should be as below 
-   
-   ![image](https://user-images.githubusercontent.com/49314681/156896653-0d3aa25f-4133-4190-a854-ad61dacf267e.png)
+ * Then, add one button 'Scan'. Its OnSelect function should be similar as below, and we are naming it as gallerycol   
+ ![image](https://user-images.githubusercontent.com/49314681/156896653-0d3aa25f-4133-4190-a854-ad61dacf267e.png)
  * Next, let's insert a gallery, similar process as we add it in the first camera screen
  * You can test out the the detection process using the preview!
  ![image](https://user-images.githubusercontent.com/49314681/156899193-09aa0649-1ad0-4e81-ae24-415cedd3c9fb.png)
 
-Next, we'll build up the navigation screen when you enter the app. 
+Moving forward, we'll build up the navigation screen when you enter the app. 
 ![image](https://user-images.githubusercontent.com/49314681/154807189-cb262ccd-8541-47db-b817-99f09ee07447.png)
  * Let's change the background to 'Black' and add the background image
  ![image](https://user-images.githubusercontent.com/49314681/156899255-091f9240-62c9-475e-a982-7cf7eece9b06.png)
