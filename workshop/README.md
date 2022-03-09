@@ -160,11 +160,11 @@ Now we will have a look at the steps to connecting our application to Custom Vis
 
 1. We need to connect to Custom Vision by going Data source→(search Custom Vision) → Select Custom Vision → Choose a table/entity.
 ![image](https://user-images.githubusercontent.com/49314681/154702946-e50aca72-ec96-4391-aa2c-f260bdb07615.png)
-2. Then you will be asked to enter the Prediction Key and Site URL. We'll go back to Custom Vision Performance tab and find the Prediction Key like the image below
-![image](https://user-images.githubusercontent.com/49314681/156895454-3b757112-05e9-4df7-aafb-cc751b08fb5e.png)
+2. Then you will be asked to enter the Prediction Key and Site URL. We'll go back to Custom Vision Performance tab and find the Prediction Key like the image below (We covered the specific keys to avoid cost of reusing resources)
+![image](https://user-images.githubusercontent.com/49314681/157447442-960c9472-cf7e-4961-91d9-d5e4801c2040.png)
 
 We'll use only a portion of the image file URL like the image below
-![image](https://user-images.githubusercontent.com/49314681/156895503-fe8448d3-aedf-4f7f-9b6d-b86c524c0259.png)
+![image](https://user-images.githubusercontent.com/49314681/157447520-676296ba-66eb-4629-975e-510056810c8f.png)
 
 Click 'Connect' then your Custom Vision data resource will appear in your left pane!
 
@@ -174,7 +174,7 @@ Now, we'll create the 'CameraTestScreen'
  ![image](https://user-images.githubusercontent.com/49314681/156895614-a5e6fc20-3f60-429a-b4ca-c6bdb37e67e7.png)
  * Then, add one button 'Scan'. Its OnSelect function should be similar as below as we are using the [ClearCollect](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect), and we are naming it as camercol 
  
- ![image](https://user-images.githubusercontent.com/49314681/157070358-8c30a818-7fbe-49fb-b46a-c6ecf21c4111.png)
+ ![image](https://user-images.githubusercontent.com/49314681/157448005-d004daea-11ab-4d2a-810c-5b2e402b1131.png)
  * Next, let's insert a gallery to show the scaning process, 
  ![image](https://user-images.githubusercontent.com/49314681/156896003-5332ca53-1461-49e5-b1fa-a66686aa13be.png)
    * When prompted, choose camercol as the resource group
@@ -194,7 +194,7 @@ The second screen is 'GalleryTestScreen', which looks like this
    ![image](https://user-images.githubusercontent.com/49314681/156896572-c6d0d114-b7eb-4c6b-9a0e-3635c5889408.png)
    
  * Then, add one button 'Scan'. Its OnSelect function should be similar as below, and we are naming it as gallerycol   
- ![image](https://user-images.githubusercontent.com/49314681/156896653-0d3aa25f-4133-4190-a854-ad61dacf267e.png)
+ ![image](https://user-images.githubusercontent.com/49314681/157448097-cdb333c6-44ab-42ce-814e-fec4642ce1cf.png)
  * Next, let's insert a gallery, similar process as we add it in the first camera screen
  * You can test out the the detection process using the preview!
  ![image](https://user-images.githubusercontent.com/49314681/156899193-09aa0649-1ad0-4e81-ae24-415cedd3c9fb.png)
