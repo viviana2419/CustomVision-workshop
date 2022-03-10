@@ -64,6 +64,8 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
     https://www.kaggle.com/linchundan/fundusimage1000
 
     https://www5.cs.fau.de/fileadmin/research/datasets/fundus-images/healthy.zip
+    
+    You are free to amalgamate both these datasets to strengthen the robustness of your model. 
 
 2. Open the Azure portal at https://portal.azure.com/. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
 ![image](https://user-images.githubusercontent.com/49314681/156890834-f302abcb-8a1c-4f07-8c4c-20052ddc18df.png)
@@ -92,7 +94,7 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
       
           Pricing tier: Standard
           
-    Click 'Review+create', then you will have the resource group available
+    Click 'Review+create'. Once your resource is validated, hit 'Create'. <br> You will now have the resource group available
     ![image](https://user-images.githubusercontent.com/49314681/156891388-239bdaa4-eba6-4918-aa1c-592ea948954b.png)
 
       
