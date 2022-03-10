@@ -14,9 +14,9 @@ In this workshop, we will discuss how to build a no-code app with Custom Vision 
 | **What will you learn**       | How to build an app with Power Apps and integrate Custom Vision to classify imagines                                        |
 | **What you'll need**          | [Custom Vision](https://www.customvision.ai/), [Power App]( https://make.powerapps.com)|
 | **Duration**                  | 1 hour                                                                |
-| **Just want to try the app or see the solution?** | *an optional link to the completed project sample app or solution folder*                          |
+| **Just want to try the app or see the solution?** | [DR Detection App](https://apps.powerapps.com/play/7df60516-60d8-4627-bccb-f96169f86d76?tenantId=84c31ca0-ac3b-4eae-ad11-519d80233e6f&source=portal&screenColor=RGBA(0%2C176%2C240%2C1))                      |
 | **Slides** | [Powerpoint](slides.pptx) 
-| **Author**                  | Jingyi Zhu                                                                |
+| **Author**                  | Jingyi Zhu, Sanya Sinha                                                                |
                          
 ## Video
 
@@ -52,6 +52,7 @@ What is Diabetic Retinopathy?
   A diabetes complication that affects eyes, which might cause no symptoms or only mild vision problems at first. But it can lead to blindness. Careful management of diabetes is the best way to prevent vision loss. Patient should see an eye doctor for a yearly eye exam with dilation — even if the vision seems fine.
 
 ![image](https://user-images.githubusercontent.com/49314681/153230680-9351bded-4c7c-43e3-aa61-a9c5ae55f357.png)
+
 
 
 ## Milestone 1 - Custom Vision project build up
