@@ -16,7 +16,7 @@ In this workshop, we will discuss how to build a no-code app with Custom Vision 
 | **Duration**                  | 1 hour                                                                |
 | **Just want to try the app or see the solution?** | [DR Detection App](https://apps.powerapps.com/play/7df60516-60d8-4627-bccb-f96169f86d76?tenantId=84c31ca0-ac3b-4eae-ad11-519d80233e6f&source=portal&screenColor=RGBA(0%2C176%2C240%2C1))                      |
 | **Slides** | [Powerpoint](slides.pptx) 
-| **Author**                  | Jingyi Zhu, [Sanya Sinha](https://github.com/ssanya942)                                                                |
+| **Author**                  | [Jingyi Zhu](https://github.com/viviana2419), [Sanya Sinha](https://github.com/ssanya942)                                                                |
                          
 ## Video
 
