@@ -1,31 +1,31 @@
 
-# UBD: Understanding By Design
-
-The UBD technique of curriculum design was created by Jay McTighe and Grant Wiggins and outlined in their book, "[Understanding By Design](https://www.amazon.com/Understanding-Design-second-Grant-Wiggins/dp/B006NPF8D0/ref=sr_1_15?crid=26FTBZ6E9Q53K&keywords=understanding+by+design&qid=1636052567&sprefix=understanding+by+design%2Caps%2C94&sr=8-15)". UBD is a process of "backwards design" where the curriculum designer works through three stages, starting with the desired goals of the learning experience and moving backwards through assessments and then to the lesson design. It bears some similarities to TDD (test-driven development) processes in Engineering, where tests are to be written before the code. Use this template to outline your workshop's desired outcomes.
-
-## Workshop Title
+# Integrating Custom Vision with Power Apps for Diabetic Retinopathy Detection
 
 ## Workshop Source 
 
-List the workshop source from Microsoft Learn (usually a module)
+https://docs.microsoft.com/learn/modules/classify-images-custom-vision/
+
+https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/
 
 ## Stage 1: Desired Results 
 
-> List your established goals of the workshop experience here. These are the takeaways that you want students to have after completing the workshop.
+In this project, you will build an app that detect Diabetic Retinopathy
 
-1. Students will be skilled at:
+Students will be able to...
 
-1. Students will be able to independently use their learning to:
+Draw automatic & accurate detection insights from datasets
+Use the Custom Vision service to create an image classification solution
+Customize a Power app by adding controls, images, and logic.
 
 ## Stage 2: Evidence
 
-> List any evaluative criteria and Assessment Evidence. Students will demonstrate their understanding of the concepts by doing the following:
- 
-1. Performance Tasks (these are tasks that a student can complete to demonstrate comprehension, such as a quiz or code challenge)
+By the end of the workshop, students will be able to build a customed app combined with custom vision service. A quiz is embedded in the slides.
 
 ## Stage 3: Learning Plan
 
-> Now you are ready to build out your lesson plan. Summarize the key learning events here by creating an outline of the milestones that you can lay out to structure the course.
-
-1. List the key learning events in the workshop - for a one-hour workshop, we recommend 5 milestones
+1. Custom Vision project build up
+2. Test the model & Generate Custom Vision link
+3. Link Custom Vision model and Power App
+4. Layout of Power App
+5. App accuracy test with new inputs
 
