@@ -1,6 +1,6 @@
 # Integrating Custom Vision with Power Apps for Diabetic Retinopathy Detection
 
-## Module Source Link that we based on (optional reading)
+## Module Source Link that we based on (Optional reading)
 https://docs.microsoft.com/learn/modules/classify-images-custom-vision/
 
 https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/
@@ -11,24 +11,24 @@ In this workshop, we will discuss how to build a no-code app with Custom Vision 
 
 | **Goal**              |                     Description           |
 | ----------------------------- | --------------------------------------------------------------------- |
-| **What will you learn**       | How to build an app with Power Apps and integrate Custom Vision to classify imagines                                        |
+| **What will you learn**       | How to build an app with Power Apps and integrate Custom Vision to classify images                                        |
 | **What you'll need**          | [Custom Vision](https://www.customvision.ai/), [Power App]( https://make.powerapps.com)|
 | **Duration**                  | 1 hour                                                                |
 | **Just want to try the app or see the solution?** | [DR Detection App](https://apps.powerapps.com/play/7df60516-60d8-4627-bccb-f96169f86d76?tenantId=84c31ca0-ac3b-4eae-ad11-519d80233e6f&source=portal&screenColor=RGBA(0%2C176%2C240%2C1))                      |
 | **Slides** | [Powerpoint](slides.pptx) 
 | **Author**                  | [Jingyi Zhu](https://github.com/viviana2419), [Sanya Sinha](https://github.com/ssanya942)                                                                |
                          
-## Video
+## Video (Optional watching)
 
 Will be uploaded soon!
 
-## Pre-Learning (optional: at your reference)
+## Pre-Learning (Optional reading)
 
 [Get started with Computer Vision](https://docs.microsoft.com/learn/modules/analyze-images-computer-vision/)
 
 [Get started with Power App](https://docs.microsoft.com/learn/modules/get-started-with-powerapps/)
 
-## Prerequisites
+## Prerequisites (Required registration)
 
 1. You'll need to have an [Azure Account](https://azure-for-academics.github.io/getting-azure/) for Custom Vision Service. You may get free credits from [Azure for Students](https://azure.microsoft.com/free/students/), or [Azure Free Trial](https://azure.microsoft.com/free/).
 
@@ -56,10 +56,11 @@ What is Diabetic Retinopathy?
 
 
 ## Milestone 1 - Custom Vision project build up
+Here is the [demo video link](https://youtu.be/S4rmByvSfNs) for Milestone 1 & 2 
 
 In Azure, you can use the Custom Vision cognitive service to train an image classification model based on existing images. There are two elements to creating an image classification solution. First, you must train a model to recognize different classes using existing images. Then, when the model is trained you must publish it as a service that can be consumed by applications.
 
-1. Let's begin by getting the dataset of diabetic retinopathy images
+1. Let's begin by **getting the dataset** of diabetic retinopathy images
 
     https://www.kaggle.com/linchundan/fundusimage1000
 
@@ -67,11 +68,11 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
     
     You are free to amalgamate both these datasets to strengthen the robustness of your model. 
 
-2. Open the Azure portal at https://portal.azure.com/. If prompted, sign in using the Microsoft account associated with your Azure subscription and agree to the terms of service
+2. **Open the Azure portal at https://portal.azure.com/.** If prompted, sign in using the Microsoft account **associated with your Azure subscription** and agree to the terms of service
 ![image](https://user-images.githubusercontent.com/49314681/156890834-f302abcb-8a1c-4f07-8c4c-20052ddc18df.png)
 
 
-3. Click the Custom Vision section, then you'll enter this page:
+3. Search and choose the Custom Vision section, then you'll enter this page:
   ![image](https://user-images.githubusercontent.com/49314681/156890910-7e75e2b1-1908-4823-8cfc-59f6277979b9.png)
 
     * Let's create a new project with the following settings:
@@ -80,21 +81,25 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
 
       Project Details: 
       
-          Subscription: Visual Studio Enterprise Subscription 
+          Subscription: Your existing Azure Subscription
           
-          Resource group: DRDEMO 
+          Resource group: (Click create new) DRDEMO101 
 
       Instance Details:
       
           Region: the one closest to you
 
-          Name: DRDEMO101
+          Name: DRDEMOINSTANCE
       
-      Training and Prediction Resource:
+      Training Resource:
       
           Pricing tier: Standard
           
-    Click 'Review+create'. Once your resource is validated, hit 'Create'. <br> You will now have the resource group available
+      Prediction Resource:
+           
+          Pricing tier: Standard
+          
+    **Click 'Review+create'** Then, once your Azure resource is validated, you'll have the resource group available like this
     ![image](https://user-images.githubusercontent.com/49314681/156891388-239bdaa4-eba6-4918-aa1c-592ea948954b.png)
 
       
@@ -106,13 +111,14 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
 
           Description: Image classification for Diabetic Retinopathy
 
-          Resource: The resource you created previously
+          Resource: (The Azure resource you created previously) DRDEMO101 
 
           Project Types: Classification
 
           Classification Types: Multiclass (single tag per image)
 
           Domains: General[A2]
+          
    Then, click 'Create Project'
 
 5. You will enter the User Interface of Custom Vision like the one below. Click [+] Add images, and select all of the files in the positive image folder you extracted previously. Then upload the image files, specifying the tag positive
