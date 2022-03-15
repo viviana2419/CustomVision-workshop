@@ -1,13 +1,13 @@
 # Integrating Custom Vision with Power Apps for Diabetic Retinopathy Detection
 
-## Module Source Link
+## Module Source Link that we based on (optional reading)
 https://docs.microsoft.com/learn/modules/classify-images-custom-vision/
 
 https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/
 
 ## Goals
 
-In this workshop, we will discuss how to build a no-code app with Custom Vision to classify imagines 
+In this workshop, we will discuss how to build a no-code app with Custom Vision to classify images 
 
 | **Goal**              |                     Description           |
 | ----------------------------- | --------------------------------------------------------------------- |
@@ -20,9 +20,9 @@ In this workshop, we will discuss how to build a no-code app with Custom Vision 
                          
 ## Video
 
-Embed your Train the Trainer video here. Instructions on how to create a great video experience is [available on this page](../video-guidance.md).
+Will be uploaded soon!
 
-## Pre-Learning
+## Pre-Learning (optional: at your reference)
 
 [Get started with Computer Vision](https://docs.microsoft.com/learn/modules/analyze-images-computer-vision/)
 
@@ -39,7 +39,7 @@ Embed your Train the Trainer video here. Instructions on how to create a great v
     Learn more about [joining Microsoft Developer program](https://developer.microsoft.com/en-us/microsoft-365/dev-program) and [creating a PowerApp Account](https://techcommunity.microsoft.com/t5/educator-developer-blog/getting-started-with-a-power-apps-community-developer-account/ba-p/2693859) 
 
 
-## What students will learn
+## What you will learn:
 
 In this project, you will build an app that detect Diabetic Retinopathy  
 
