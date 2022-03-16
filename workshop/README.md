@@ -184,7 +184,7 @@ We'll use only **a portion of the image file URL** like the image below
 Now, we'll create our first screen
  * First, add the 'Camera' feature for detection functionality on phone or tablet
  ![image](https://user-images.githubusercontent.com/49314681/156895614-a5e6fc20-3f60-429a-b4ca-c6bdb37e67e7.png)
- * Then, add one button 'Scan'. Its OnSelect function should be similar as below as we are using the [ClearCollect function](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect). We are naming it as camercol. After you typed 'CustomVision.' Power App will pop up recommend project connected with your CustomVision. Within the bracket, you'll enter the project id (with " marks and can be find in your custom vision portal), iteration ((with " marks and as indicated in your custom vision portal), and choose Camera1.Photo to get the image. 
+ * Then, add one button 'Scan'. Its OnSelect function should be similar as below as we are using the [ClearCollect function](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect). We are naming it as camercol. After you typed 'CustomVision.' Power App will pop up recommend project connected with your CustomVision. Within the bracket, you'll enter the project id (with " marks and can be find in your custom vision portal), iteration (with " marks and as indicated in your custom vision portal), and choose Camera1.Photo to get the image. 
  
          ClearCollect(camercol,CustomVision.ClassifyImageV2("project id","Iteration",Camera1.Photo).predictions)
  
@@ -211,7 +211,7 @@ The second screen is 'GalleryTestScreen', which looks like this
  * Then, add one button 'Scan'. Its OnSelect function should be similar as below, and we are naming it as gallerycol   
  ![image](https://user-images.githubusercontent.com/49314681/157448097-cdb333c6-44ab-42ce-814e-fec4642ce1cf.png)
  * Next, let's insert a gallery, similar process as we add it in the first camera screen
- * You can test out the the detection process using the preview!
+ * You can **test out the the detection process using the preview!
  ![image](https://user-images.githubusercontent.com/49314681/156899193-09aa0649-1ad0-4e81-ae24-415cedd3c9fb.png)
 
 Moving forward, we'll build up the navigation screen when you enter the app. 
@@ -235,7 +235,7 @@ The app can run on mobile, install the Power Apps Mobile app on your phone. When
 
 ## Milestone 5 - App accuracy test with new inputs
 
-Now that your app is built, the next step is to start testing it.
+Now that your app is built, here are some additional testing methods:
 
 Unit test
 * A unit test is used to check whether a specific function or feature of your app is working correctly.
