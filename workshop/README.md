@@ -5,7 +5,7 @@ https://docs.microsoft.com/learn/modules/classify-images-custom-vision/
 
 https://docs.microsoft.com/learn/modules/customize-apps-in-powerapps/
 
-## Goals
+## Goals (Important!)
 
 In this workshop, we will discuss how to build a no-code app with Custom Vision to classify images 
 
@@ -99,11 +99,11 @@ In Azure, you can use the Custom Vision cognitive service to train an image clas
            
           Pricing tier: Standard
           
-    **Click 'Review+create'** Then, once your Azure resource is validated, you'll have the resource group available like this
+    **Click 'Review+create' directly** Then, once your Azure resource is validated, you'll have the resource group available like this
     ![image](https://user-images.githubusercontent.com/49314681/156891388-239bdaa4-eba6-4918-aa1c-592ea948954b.png)
 
       
-4. Next, **login to the [Custom Vision portal](https://www.customvision.ai/),** create a new project with the following settings:
+4. Next, keep your Azure page open, **and open a new page to login to the [Custom Vision portal](https://www.customvision.ai/),** create a new project with the following settings:
 
    ![image](https://user-images.githubusercontent.com/49314681/156891552-09ef5f49-165f-47a8-9420-3811e275c914.png)
 
@@ -175,7 +175,7 @@ Now we will have a look at the steps to **connecting our application to Custom V
 2. Then you will be asked **to enter the Prediction Key and Site URL**. We'll go back to Custom Vision Performance tab and **find the Prediction Key like the image below** (Please use your code **in the blue highligheted area**. We covered the specific keys to avoid cost of reusing resources)
 ![image](https://user-images.githubusercontent.com/49314681/157447442-960c9472-cf7e-4961-91d9-d5e4801c2040.png)
 
-We'll use only **a portion of the image file URL** like the image below
+We'll use only **a portion of the image file URL (end with .com) ** like the image below
 ![image](https://user-images.githubusercontent.com/49314681/157447520-676296ba-66eb-4629-975e-510056810c8f.png)
 
 **Click 'Connect' then your Custom Vision data resource will appear in your left pane!**
@@ -184,7 +184,7 @@ We'll use only **a portion of the image file URL** like the image below
 Now, we'll create our first screen
  * First, add the 'Camera' feature for detection functionality on phone or tablet
  ![image](https://user-images.githubusercontent.com/49314681/156895614-a5e6fc20-3f60-429a-b4ca-c6bdb37e67e7.png)
- * Then, add one button 'Scan'. Its OnSelect function should be similar as below as we are using the [ClearCollect function](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect). We are naming it as camercol. After you typed 'CustomVision.' Power App will pop up recommend project connected with your CustomVision. Within the bracket, you'll enter the project id (with " marks and can be find in your custom vision portal), iteration (with " marks and as indicated in your custom vision portal), and choose Camera1.Photo to get the image. 
+ * Then, Find button function in the left pane, and add one button, naming it 'Scan'. Go to right pane, find tab 'Advance' and the first showing is 'Onselect', which means the code it will run when you click the button. Its OnSelect function should be similar as below as we are using the [ClearCollect function](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/functions/function-clear-collect-clearcollect). We are naming it as camercol. After you typed 'CustomVision.' Power App will pop up recommend project connected with your CustomVision. Within the bracket, you'll enter the project id (with " marks and can be find in your custom vision portal), iteration (with " marks and as indicated in your custom vision portal), and choose Camera1.Photo to get the image. 
  
          ClearCollect(camercol,CustomVision.ClassifyImageV2("project id","Iteration",Camera1.Photo).predictions)
  
