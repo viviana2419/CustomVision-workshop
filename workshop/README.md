@@ -18,11 +18,11 @@ In this workshop, we will discuss how to build a no-code app with Custom Vision 
 | **Slides** | [Powerpoint](slides.pptx) 
 | **Author**                  | [Jingyi Zhu](https://github.com/viviana2419), [Sanya Sinha](https://github.com/ssanya942)                                                                |
                          
-## Video (Optional watching)
+## Video 
 
 Will be uploaded soon!
 
-## Pre-Learning (Optional reading)
+## Pre-Learning (Encouraged reading)
 
 [Get started with Computer Vision](https://docs.microsoft.com/learn/modules/analyze-images-computer-vision/)
 
